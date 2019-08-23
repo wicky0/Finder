@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cop"
+    android:fitsSystemWindows="true">
+    tools:context=".signup">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="20dp"
+            android:text="Register here"
+            android:textAlignment="center"
+            android:textColor="#D81B60"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/calligraffitti" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_color="#000"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+            <ImageButton
+                android:id="@+id/icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/ic_photo_camera"
+                android:background="@drawable/round"
+                tools:layout_editor_absoluteX="135dp"
+                tools:layout_editor_absoluteY="98dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Names Label -->
+            <EditText
+                android:id="@+id/names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/bitter"
+                android:hint="Fullnames"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- Countries Label -->
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"></com.hbb20.CountryCodePicker>
+                <!-- Phone No. Label -->
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/bitter"
+                    android:hint="Phone No."
+                    android:inputType="number"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!-- Email Label -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/bitter"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <!-- City Label -->
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/bitter"
+                android:inputType="text"
+                android:text="City"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <!-- Password Label -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/bitter"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <!-- Confirm Password Label -->
+            <EditText
+                android:id="@+id/confPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/bitter"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/bitter"
+                android:text="Register"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!-- LogIn Link -->
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/bitter"
+                android:text="Already a member? Login"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+ </LinearLayout>
+</ScrollView>

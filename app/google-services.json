@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "154815457109",
+    "firebase_url": "https://mfinder-ddce7.firebaseio.com",
+    "project_id": "mfinder-ddce7",
+    "storage_bucket": "mfinder-ddce7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154815457109:android:68946ac7d663798e",
+        "android_client_info": {
+          "package_name": "com.example.finder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154815457109-l97479asktlnf5u93ls6qaojfk4lq44b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXv9b2JVF_9nwp3X2zjPKzfudcB5cU2e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154815457109-l97479asktlnf5u93ls6qaojfk4lq44b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
